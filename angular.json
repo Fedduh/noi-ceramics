@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "test-ssr": {
+    "noi-ceramics": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/test-ssr",
+            "outputPath": "dist/noi-ceramics",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": ["zone.js"],
@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "test-ssr:build:production"
+              "buildTarget": "noi-ceramics:build:production"
             },
             "development": {
-              "buildTarget": "test-ssr:build:development"
+              "buildTarget": "noi-ceramics:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "test-ssr:build"
+            "buildTarget": "noi-ceramics:build"
           }
         },
         "test": {
